@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Advoice Media</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:slnt,wght@-10..0,100..900&display=swap" rel="stylesheet">
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link rel="stylesheet" href="lib/animate/animate.min.css"/>
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <style>
+        .text-warning{
+            color: darkorange !important;
+        }
+        .bg-warning{
+            background-color: darkorange !important;
+        }
+    </style>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-warning" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        <div class="container-fluid topbar px-0 px-lg-4 bg-light py-2 d-none d-lg-block">
+            <div class="container">
+                <div class="row gx-0 align-items-center">
+                    <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+                        <div class="d-flex flex-wrap">
+                            <div class="border-end border-primary pe-3">
+                                <a href="#!" class="text-muted small"><i class="fas fa-map-marker-alt text-warning me-2"></i>Find A Location</a>
+                            </div>
+                            <div class="ps-3">
+                                <a href="mailto:example@gmail.com" class="text-muted small"><i class="fas fa-envelope text-warning me-2"></i>info@advoicemedia.co.ke</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-center text-lg-end">
+                        <div class="d-flex justify-content-end">
+                            <div class="d-flex border-end border-primary pe-3">
+                                <a class="btn p-0 text-warning me-3" href="#!"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn p-0 text-warning me-3" href="#!"><i class="fab fa-twitter"></i></a>
+                                <a class="btn p-0 text-warning me-3" href="#!"><i class="fab fa-instagram"></i></a>
+                                <a class="btn p-0 text-warning me-0" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                            <div class="dropdown ms-3">
+                                <a href="#!" class="dropdown-toggle text-dark" data-bs-toggle="dropdown"><small><i class="fas fa-globe-europe text-warning me-2"></i> English</small></a>
+                                <div class="dropdown-menu rounded">
+                                    <a href="#!" class="dropdown-item">English</a>
+                                    <a href="#!" class="dropdown-item">Bangla</a>
+                                    <a href="#!" class="dropdown-item">French</a>
+                                    <a href="#!" class="dropdown-item">Spanish</a>
+                                    <a href="#!" class="dropdown-item">Arabic</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light"> 
+                    <a href="index.html" class="navbar-brand p-0">
+                        <h2 class="text-warning mb-0"><strong>Advoice<span class="text-dark">Media</span></strong></h2>
+                        <!-- <img src="img/logo.png" alt="Logo"> -->
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav mx-0 mx-lg-auto">
+                            <a href="index.html" class="nav-item nav-link active">Home</a>
+                            <a href="about.html" class="nav-item nav-link">About</a>
+                            <a href="service.html" class="nav-item nav-link">Services</a>
+                            <a href="blog.html" class="nav-item nav-link">Blog</a>
+                            
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            <div class="nav-btn px-3">
+                                <button class="btn-search btn btn-warning btn-md-square rounded-circle flex-shrink-0" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
+                                <a href="#!" class="btn btn-warning rounded-pill py-2 px-4 ms-3 flex-shrink-0"> Get a Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none d-xl-flex flex-shrink-0 ps-4">
+                        <a href="#!" class="btn btn-light btn-lg-square rounded-circle position-relative wow tada" data-wow-delay=".9s">
+                            <i class="fa fa-phone-alt fa-2x  text-dark"></i>
+                            <div class="position-absolute" style="top: 7px; right: 12px;">
+                                <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                            </div>
+                        </a>
+                        <div class="d-flex flex-column ms-3">
+                            <span>Call to Our Experts</span>
+                            <a href="tel:+ 0123 456 7890"><span class="text-dark">+254 723 700 000</span></a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center bg-warning">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="btn bg-light border nput-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+
+        <!-- Carousel Start -->
+        <div class="header-carousel owl-carousel">
+            <div class="header-carousel-item bg-dark">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-lg-7 animated fadeInLeft">
+                                <div class="text-sm-center text-md-start">
+                                    <h4 class="text-white text-uppercase fw-bold mb-4">Welcome To AdvoiceMedia</h4>
+                                    <h1 class="display-1 text-white mb-4">Get Spotted <br> Amplify Your Brand</h1>
+                                    <p class="mb-5 fs-5">AdVoiceMedia is your partner in cutting-edge advertising, offering innovative solutions to help your brand stand out and make a lasting impact.
+                                    </p>
+                                    <div class="d-flex justify-content-center justify-content-md-start flex-shrink-0 mb-4">
+                                        <a class="btn btn-warning rounded-pill py-3 px-4 px-md-5 me-2" href="#!"><i class="fas fa-play-circle me-2"></i> Watch Video</a>
+                                        <a class="btn btn-dark rounded-pill py-3 px-4 px-md-5 ms-2" href="#!">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 animated fadeInRight">
+                                <div class="calrousel-img" style="object-fit: cover;">
+                                    <img src="img/brand.png" class="img-fluid w-100" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-carousel-item bg-dark">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="row gy-4 gy-lg-0 gx-0 gx-lg-5 align-items-center">
+                            <div class="col-lg-5 animated fadeInLeft">
+                                <div class="calrousel-img">
+                                    <img src="img/brand.png" class="img-fluid w-100" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-7 animated fadeInRight">
+                                <div class="text-sm-center text-md-end">
+                                    <h4 class="text-white text-uppercase fw-bold mb-4">Welcome To AdvoiceMedia</h4>
+                                    <h1 class="display-1 text-white mb-4">Get Spotted <br> Amplify Your Brand</h1>
+                                    <p class="mb-5 fs-5">AdVoiceMedia is your partner in cutting-edge advertising, offering innovative solutions to help your brand stand out and make a lasting impact.
+                                    </p>
+                                    <div class="d-flex justify-content-center justify-content-md-end flex-shrink-0 mb-4">
+                                        <a class="btn btn-warning rounded-pill py-3 px-4 px-md-5 me-2" href="#!"><i class="fas fa-play-circle me-2"></i> Watch Video</a>
+                                        <a class="btn btn-dark rounded-pill py-3 px-4 px-md-5 ms-2" href="#!">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+        <!-- Feature Start -->
+        <div class="container-fluid feature bg-light py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-warning">Our Services</h4>
+                    <h1 class="display-4 mb-4">Innovative Advertising Solutions That Speak to Your Audience.</h1>
+                    <p class="mb-0">
+                        From crafting compelling digital campaigns to creating standout outdoor advertisements and strategic branding, our comprehensive services are designed to connect your brand with the right audience, leaving a lasting impression and delivering measurable results.
+                    </p>
+                </div>
+                <div class="row g-4">
+                    
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="feature-item p-4 pt-0">
+                            <div class="feature-icon p-4 mb-4">
+                                <i class="fas fa-tablet-alt fa-2x"></i>
+                            </div>
+                            <h4 class="mb-4">Outdoor Advertising</h4>
+                            <p class="mb-4">Eye-catching billboards and signage in prime locations.
+                            </p>
+                            <a class="btn btn-warning rounded-pill py-2 px-4" href="#!">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="feature-item p-4 pt-0">
+                            <div class="feature-icon p-4 mb-4">
+                                <i class="fas fa-signature fa-2x"></i>
+                            </div>
+                            <h4 class="mb-4">Branding & Design</h4>
+                            <p class="mb-4">Crafting memorable identities that resonate.
+                            </p>
+                            <a class="btn btn-warning rounded-pill py-2 px-4" href="#!">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="feature-item p-4 pt-0">
+                            <div class="feature-icon p-4 mb-4">
+                                <i class="fab fa-google fa-2x"></i>
+                            </div>
+                            <h4 class="mb-4">Digital Advertising:</h4>
+                            <p class="mb-4">Reach your audience through PPC, social media, and SEO strategies.
+                            </p>
+                            <a class="btn btn-warning rounded-pill py-2 px-4" href="#!">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="feature-item p-4 pt-0">
+                            <div class="feature-icon p-4 mb-4">
+                                <i class="fab fa-youtube fa-2x"></i>
+                            </div>
+                            <h4 class="mb-4">Content Creation</h4>
+                            <p class="mb-4">Engaging visuals, videos, and copywriting tailored for impact.
+                            </p>
+                            <a class="btn btn-warning rounded-pill py-2 px-4" href="#!">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Feature End -->
+
+        <!-- About Start -->
+        <div class="container-fluid bg-light about pb-5">
+            <div class="container pb-5">
+                <div class="row g-5">
+                    <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="about-item-content bg-white rounded p-5 h-100">
+                            <h4 class="text-warning">About Our Company</h4>
+                            <h2 class="display-4 mb-4">Turning Big Ideas Into Bigger Opportunities.</h2>
+                            <p>
+                                At Advoice Media, we specialize in delivering innovative advertising solutions designed to elevate your brand and connect with your audience. With a team of seasoned experts and a commitment to excellence, we provide a seamless blend of creativity and strategy.
+                            </p>
+                            <p>
+                                Our vision is to revolutionize the advertising landscape by creating meaningful connections between brands and their audiences.
+                            </p>
+                            <p class="text-dark"><i class="fa fa-check text-warning me-3"></i>Innovative Advertising Solutions.</p>
+                            <p class="text-dark"><i class="fa fa-check text-warning me-3"></i>Customer-Centric Approach.</p>
+                            <p class="text-dark mb-4"><i class="fa fa-check text-warning me-3"></i>Multi-Channel Expertise.</p>
+                            <a class="btn btn-warning rounded-pill py-3 px-5" href="about.html">More Information</a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="bg-white rounded p-5 h-100">
+                            <div class="row g-4 justify-content-center">
+                                <div class="col-12">
+                                    <div class="rounded bg-light">
+                                        <img src="img/analytics.avif" class="img-fluid rounded w-100" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="counter-item bg-light rounded p-3 h-100">
+                                        <div class="counter-counting">
+                                            <span class="text-warning fs-2 fw-bold" data-toggle="counter-up">150</span>
+                                            <span class="h1 fw-bold text-warning">+</span>
+                                        </div>
+                                        <h5 class="mb-0 text-dark">Clients Served</h5>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="counter-item bg-light rounded p-3 h-100">
+                                        <div class="counter-counting">
+                                            <span class="text-warning fs-2 fw-bold" data-toggle="counter-up">7</span>
+                                            <span class="h1 fw-bold text-warning">+</span>
+                                        </div>
+                                        <h5 class="mb-0 text-dark">Awards WON</h5>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="counter-item bg-light rounded p-3 h-100">
+                                        <div class="counter-counting">
+                                            <span class="text-warning fs-2 fw-bold">9.6 <i class="fa fa-star"></i></span>
+                                            <span class="h1 fw-bold text-warning"></span>
+                                        </div>
+                                        <h5 class="mb-0 text-dark">Customer Rating</h5>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="counter-item bg-light rounded p-3 h-100">
+                                        <div class="counter-counting">
+                                            <span class="text-warning fs-2 fw-bold" data-toggle="counter-up">25</span>
+                                            <span class="h1 fw-bold text-warning">M+</span>
+                                        </div>
+                                        <h5 class="mb-0 text-dark">Traffic Genarated</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Service Start -->
+        <div class="container-fluid service py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-warning">Advertising Locations</h4>
+                    <h1 class="display-4 mb-4">Our Top Advertising Locations</h1>
+                    <p class="mb-0">We carefully select prime advertising locations that ensure maximum visibility and reach for your brand. Our top advertising locations are strategically chosen to engage your target audience where they are most likely to see your message.
+                    </p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/malls.jpg" class="img-fluid rounded-top w-100" alt="">
+                                <div class="service-icon p-3">
+                                    <i class="fa fa-users fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="service-content p-4">
+                                <div class="service-content-inner">
+                                    <a href="#!" class="d-inline-block h4 mb-4">Malls</a>
+                                    <p class="mb-4">With their constant foot traffic and diverse shopper demographics, malls offer prime advertising opportunities. Whether it's large-format displays or digital signage, or interactive installations, your brand can reach a wide range of consumers in a dynamic shopping environment.</p>
+                                    <a class="btn btn-warning rounded-pill py-2 px-4" href="#!">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/supermarkets.jpg" class="img-fluid rounded-top w-100" alt="">
+                                <div class="service-icon p-3">
+                                    <i class="fas fa-shopping-basket fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="service-content p-4">
+                                <div class="service-content-inner">
+                                    <a href="#!" class="d-inline-block h4 mb-4">Supermarkets</a>
+                                    <p class="mb-4">Supermarkets are the heart of everyday shopping for many consumers. Advertising within these spaces ensures your brand is seen by shoppers during their most frequent buying moments, leading to high engagement and product consideration.</p>
+                                    <a class="btn btn-warning rounded-pill py-2 px-4" href="#!">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/golfclubs.jpg" class="img-fluid rounded-top w-100" alt="">
+                                <div class="service-icon p-3">
+                                    <i class="fas fa-golf-ball fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="service-content p-4">
+                                <div class="service-content-inner">
+                                    <a href="#!" class="d-inline-block h4 mb-4">Golf Clubs</a>
+                                    <p class="mb-4">Golf clubs attract affluent individuals who are often decision-makers in their industries. Advertising at these locations places your brand in front of a highly targeted audience who value quality and luxury, making it ideal for high-end products and services.</p>
+                                    <a class="btn btn-warning rounded-pill py-2 px-4" href="#!">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/airports.jpg" class="img-fluid rounded-top w-100" alt="">
+                                <div class="service-icon p-3">
+                                    <i class="fas fa-plane-departure fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="service-content p-4">
+                                <div class="service-content-inner">
+                                    <a href="#!" class="d-inline-block h4 mb-4">Airports</a>
+                                    <p class="mb-4">Airports are global hubs of activity where business travelers, tourists, and high-income individuals converge. With high visibility and captive audiences, airport advertising ensures your brand reaches travelers from all over the world.</p>
+                                    <a class="btn btn-warning rounded-pill py-2 px-4" href="#!">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
+                        <a class="btn btn-warning rounded-pill py-3 px-5" href="#!">See more locations</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+        <!-- FAQs Start -->
+        <div class="container-fluid faq-section bg-light py-5">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="h-100">
+                            <div class="mb-5">
+                                <h4 class="text-warning">Some Important FAQ's</h4>
+                                <h1 class="display-4 mb-0">Common Frequently Asked Questions</h1>
+                            </div>
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Q: What types of businesses do you work with?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show active" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body rounded">
+                                            <span class="fw-bold">Answer: </span>
+                                            We work with a wide range of businesses, from startups to established enterprises, across various industries including retail, technology, healthcare, finance, hospitality, and more. Our tailored advertising solutions are designed to meet the unique needs of each business, regardless of its size or sector.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Q: How do you measure the success of a campaign?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <span class="fw-bold">Answer: </span>
+                                            We measure success through a variety of key performance indicators (KPIs) such as ROI (Return on Investment), conversion rates, customer acquisition cost, and engagement metrics. We provide detailed reports to track the performance of each campaign and ensure it aligns with our clients' goals.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Q: What makes your advertising services different from others?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <span class="fw-bold">Answer: </span>
+                                            Our unique approach combines creativity with data-driven strategies to deliver impactful and personalized campaigns. We focus on building authentic connections between brands and their audiences, utilizing multiple channels and the latest technology to drive measurable results. Our commitment to customer satisfaction and long-term partnerships sets us apart.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.4s">
+                        <img src="img/faq.jpg" class="img-fluid w-100" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FAQs End -->
+
+        <!-- Blog Start -->
+        <div class="container-fluid blog py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-warning">From Blog</h4>
+                    <h1 class="display-4 mb-4">News And Updates</h1>
+                    <p class="mb-0">
+                        Stay up to date with the latest trends, insights, and innovations in the advertising world. At AdVoice Media, we continuously evolve our strategies to keep your brand ahead of the competition. Our news section brings you important updates on new campaigns, industry developments, and tips to help elevate your marketing efforts.
+                    </p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="img/new001.jpg" class="img-fluid rounded-top w-100" alt="">
+                                <div class="blog-categiry py-2 px-4">
+                                    <span>Industry Insights</span>
+                                </div>
+                            </div>
+                            <div class="blog-content p-4">
+                                <div class="blog-comment d-flex justify-content-between mb-3">
+                                    <div class="small"><span class="fa fa-user text-warning"></span> Martin.C</div>
+                                    <div class="small"><span class="fa fa-calendar text-warning"></span> 1st Jan 2025</div>
+                                    <div class="small"><span class="fa fa-comment-alt text-warning"></span> 6 Comments</div>
+                                </div>
+                                <a href="#!" class="h4 d-inline-block mb-3">The Future of Digital Advertising</a>
+                                <p class="mb-3">As digital advertising continues to evolve, staying ahead of emerging trends is essential. In 2025, interactive content, AI-driven targeting, and personalized experiences will dominate. </p>
+                                <a href="#!" class="btn p-0">Read More  <i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="img/news002.jpg" class="img-fluid rounded-top w-100" alt="">
+                                <div class="blog-categiry py-2 px-4">
+                                    <span>Company Achievements</span>
+                                </div>
+                            </div>
+                            <div class="blog-content p-4">
+                                <div class="blog-comment d-flex justify-content-between mb-3">
+                                    <div class="small"><span class="fa fa-user text-warning"></span> Martin.C</div>
+                                    <div class="small"><span class="fa fa-calendar text-warning"></span> 3rd Jan 2025</div>
+                                    <div class="small"><span class="fa fa-comment-alt text-warning"></span> 4 Comments</div>
+                                </div>
+                                <a href="#!" class="h4 d-inline-block mb-3">AdvoiceMedia Celebrates Record Growth.</a>
+                                <p class="mb-3">We are excited to announce that AdVoice Media has achieved a milestone of 30% growth in client revenue over the past year. </p>
+                                <a href="#!" class="btn p-0">Read More  <i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="img/news003.jpg" class="img-fluid rounded-top w-100" alt="">
+                                <div class="blog-categiry py-2 px-4">
+                                    <span>Upcoming Events</span>
+                                </div>
+                            </div>
+                            <div class="blog-content p-4">
+                                <div class="blog-comment d-flex justify-content-between mb-3">
+                                    <div class="small"><span class="fa fa-user text-warning"></span> Martin.C</div>
+                                    <div class="small"><span class="fa fa-calendar text-warning"></span> 7th Jan 2025</div>
+                                    <div class="small"><span class="fa fa-comment-alt text-warning"></span> 9 Comments</div>
+                                </div>
+                                <a href="#!" class="h4 d-inline-block mb-3">AdvoiceMedia to Speak at the Global Advertising Summit 2025</a>
+                                <p class="mb-3">We’re excited to announce that Advoice Media will be a featured speaker at the prestigious Global Advertising Summit 2025. </p>
+                                <a href="#!" class="btn p-0">Read More  <i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog End -->
+
+        <!-- Team Start -->
+        <div class="container-fluid team pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-warning">Our Team</h4>
+                    <h1 class="display-4 mb-4">Meet Our Expert Team Members</h1>
+                    <p class="mb-0">
+                        Composed of industry experts with diverse backgrounds in creative strategy, social media management, digital marketing, and data analytics, we bring a collaborative approach to every project.
+                    </p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/member-001.jpg" class="img-fluid rounded-top w-100" alt="">
+                                <div class="team-icon">
+                                    <a class="btn btn-warning btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-warning btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-warning btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-warning btn-sm-square rounded-pill mb-0" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-title p-4">
+                                <h4 class="mb-0 ">Zahra W.S</h4>
+                                <p class="mb-0">Marketing Director</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/member-002.enc" class="img-fluid rounded-top w-100" alt="">
+                                <div class="team-icon">
+                                    <a class="btn btn-warning btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-warning btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-warning btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-warning btn-sm-square rounded-pill mb-0" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-title p-4">
+                                <h4 class="mb-0">Richard A</h4>
+                                <p class="mb-0">Creative Director</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/member-003.jpg" class="img-fluid rounded-top w-100" alt="">
+                                <div class="team-icon">
+                                    <a class="btn btn-warning btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-warning btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-warning btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-warning btn-sm-square rounded-pill mb-0" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-title p-4">
+                                <h4 class="mb-0">Nancy Omondi</h4>
+                                <p class="mb-0">Social Media Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/member-004.jpg" class="img-fluid rounded-top w-100" alt="">
+                                <div class="team-icon">
+                                    <a class="btn btn-warning btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-warning btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-warning btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-warning btn-sm-square rounded-pill mb-0" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-title p-4">
+                                <h4 class="mb-0">William Kamau</h4>
+                                <p class="mb-0">Marketing Strategist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+        <!-- Testimonial Start -->
+        <div class="container-fluid testimonial pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-warning">Testimonial</h4>
+                    <h1 class="display-4 mb-4">What Our Customers Are Saying</h1>
+                    <p class="mb-0">
+                        At AdVoice Media, we take pride in building strong, lasting relationships with our clients. Our team works tirelessly to create tailored advertising strategies that drive results, and the success of our customers is a testament to our commitment
+                    </p>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="testimonial-item bg-light rounded">
+                        <div class="row g-0">
+                            <div class="col-4  col-lg-4 col-xl-3">
+                                <div class="h-100">
+                                    <img src="img/airtel.jpg" class="img-fluid h-100 rounded" style="object-fit: cover;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-8 col-lg-8 col-xl-9">
+                                <div class="d-flex flex-column my-auto text-start p-4">
+                                    <h4 class="text-dark mb-0">Airtel</h4>
+                                    <p class="mb-3">Networking Company</p>
+                                    <div class="d-flex text-warning mb-3">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="mb-0">
+                                        AdvoiceMedia’s comprehensive approach to advertising transformed our brand presence. Their multi-channel campaign, which included everything from targeted online ads to strategic outdoor placements, drove an 80% increase in bookings within just six months. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded">
+                        <div class="row g-0">
+                            <div class="col-4  col-lg-4 col-xl-3">
+                                <div class="h-100">
+                                    <img src="img/naivas.png" class="img-fluid h-100 rounded" style="object-fit: cover;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-8 col-lg-8 col-xl-9">
+                                <div class="d-flex flex-column my-auto text-start p-4">
+                                    <h4 class="text-dark mb-0">Naivas</h4>
+                                    <p class="mb-3">Supermarket Chain</p>
+                                    <div class="d-flex text-warning mb-3">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star text-body"></i>
+                                    </div>
+                                    <p class="mb-0">Advoice Media helped us build a solid foundation for our marketing efforts. Their content creation, along with their SEO and PPC expertise, gave our brand the visibility it needed to thrive. We saw immediate results in the form of higher engagement and a noticeable increase in sales.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded">
+                        <div class="row g-0">
+                            <div class="col-4  col-lg-4 col-xl-3">
+                                <div class="h-100">
+                                    <img src="img/faras.png" class="img-fluid h-100 rounded" style="object-fit: cover;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-8 col-lg-8 col-xl-9">
+                                <div class="d-flex flex-column my-auto text-start p-4">
+                                    <h4 class="text-dark mb-0">Faras</h4>
+                                    <p class="mb-3">Online Cab Service</p>
+                                    <div class="d-flex text-warning mb-3">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star text-body"></i>
+                                        <i class="fas fa-star text-body"></i>
+                                    </div>
+                                    <p class="mb-0">Working with AdVoice Media has been a game-changer for our brand. Their digital advertising strategy helped us increase our website traffic by over 200% and significantly boosted our customer engagement. We look forward to continuing our partnership with them!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-xl-9">
+                        <div class="mb-5">
+                            <div class="row g-4">
+                                <div class="col-md-6 col-lg-6 col-xl-5">
+                                    <div class="footer-item">
+                                        <a href="index.html" class="p-0">
+                                            <h3 class="text-white"><i class="fab fa-slack me-3"></i> AdvoiceMedia</h3>
+                                            <!-- <img src="img/logo.png" alt="Logo"> -->
+                                        </a>
+                                        <p class="text-white mb-4">Revolutionizing the advertising landscape by creating meaningful connections between brands and their audiences.
+
+</p>
+                                        <div class="footer-btn d-flex">
+                                            <a class="btn btn-md-square rounded-circle me-3" href="#!"><i class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn-md-square rounded-circle me-3" href="#!"><i class="fab fa-twitter"></i></a>
+                                            <a class="btn btn-md-square rounded-circle me-3" href="#!"><i class="fab fa-instagram"></i></a>
+                                            <a class="btn btn-md-square rounded-circle me-0" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-xl-3">
+                                    <div class="footer-item">
+                                        <h4 class="text-white mb-4">Useful Links</h4>
+                                        <a href="#!"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                                        <a href="#!"><i class="fas fa-angle-right me-2"></i> Features</a>
+                                        <a href="#!"><i class="fas fa-angle-right me-2"></i> Services</a>
+                                        <a href="#!"><i class="fas fa-angle-right me-2"></i> FAQ's</a>
+                                        <a href="#!"><i class="fas fa-angle-right me-2"></i> Blogs</a>
+                                        <a href="#!"><i class="fas fa-angle-right me-2"></i> Contact</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-xl-4">
+                                    <div class="footer-item">
+                                        <h4 class="mb-4 text-white">Instagram</h4>
+                                        <div class="row g-3">
+                                            <div class="col-4">
+                                                <div class="footer-instagram rounded">
+                                                    <img src="img/insta-001.jpg" class="img-fluid w-100" alt="">
+                                                    <div class="footer-search-icon">
+                                                        <a href="img/insta-001.jpg" data-lightbox="footerInstagram-1" class="my-auto"><i class="fas fa-link text-white"></i></a>
+                                                    </div>
+                                                </div>
+                                           </div>
+                                           <div class="col-4">
+                                                <div class="footer-instagram rounded">
+                                                    <img src="img/insta-002.png" class="img-fluid w-100" alt="">
+                                                    <div class="footer-search-icon">
+                                                        <a href="img/insta-002.png" data-lightbox="footerInstagram-2" class="my-auto"><i class="fas fa-link text-white"></i></a>
+                                                    </div>
+                                                </div>
+                                           </div>
+                                            <div class="col-4">
+                                                <div class="footer-instagram rounded">
+                                                    <img src="img/insta-003.png" class="img-fluid w-100" alt="">
+                                                    <div class="footer-search-icon">
+                                                        <a href="img/insta-003.png" data-lightbox="footerInstagram-3" class="my-auto"><i class="fas fa-link text-white"></i></a>
+                                                    </div>
+                                                </div>
+                                           </div>
+                                            <div class="col-4">
+                                                <div class="footer-instagram rounded">
+                                                    <img src="img/insta-004.jpg" class="img-fluid w-100" alt="">
+                                                    <div class="footer-search-icon">
+                                                        <a href="img/insta-004.jpg" data-lightbox="footerInstagram-4" class="my-auto"><i class="fas fa-link text-white"></i></a>
+                                                    </div>
+                                                </div>
+                                           </div>
+                                            <div class="col-4">
+                                                <div class="footer-instagram rounded">
+                                                    <img src="img/insta-005.jpg" class="img-fluid w-100" alt="">
+                                                    <div class="footer-search-icon">
+                                                        <a href="img/insta-005.jpg" data-lightbox="footerInstagram-5" class="my-auto"><i class="fas fa-link text-white"></i></a>
+                                                    </div>
+                                                </div>
+                                           </div>
+                                           <div class="col-4">
+                                                <div class="footer-instagram rounded">
+                                                    <img src="img/insta-006.jpg" class="img-fluid w-100" alt="">
+                                                    <div class="footer-search-icon">
+                                                        <a href="img/insta-006.jpg" data-lightbox="footerInstagram-6" class="my-auto"><i class="fas fa-link text-white"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-5" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                            <div class="row g-0">
+                                <div class="col-12">
+                                    <div class="row g-4">
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="d-flex">
+                                                <div class="btn-xl-square bg-warning text-white rounded p-4 me-4">
+                                                    <i class="fas fa-map-marker-alt fa-2x"></i>
+                                                </div>
+                                                <div>
+                                                    <h4 class="text-white">Address</h4>
+                                                    <p class="mb-0">The Chancery, Nairobi, Kenya</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="d-flex">
+                                                <div class="btn-xl-square bg-warning text-white rounded p-4 me-4">
+                                                    <i class="fas fa-envelope fa-2x"></i>
+                                                </div>
+                                                <div>
+                                                    <h4 class="text-white">Mail Us</h4>
+                                                    <p class="mb-0">info@advoicemedia.co.ke</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="d-flex">
+                                                <div class="btn-xl-square bg-warning text-white rounded p-4 me-4">
+                                                    <i class="fa fa-phone-alt fa-2x"></i>
+                                                </div>
+                                                <div>
+                                                    <h4 class="text-white">Telephone</h4>
+                                                    <p class="mb-0">(+254) 723 700 000</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Newsletter</h4>
+                            <p class="text-white mb-3">Subscribe to our newsletter and get the latest industry insights and updates on our newest campaigns.</p>
+                            <div class="position-relative rounded-pill mb-4">
+                                <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                                <button type="button" class="btn btn-warning rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                            </div>
+                            <div class="d-flex flex-shrink-0">
+                                <div class="footer-btn">
+                                    <a href="#!" class="btn btn-lg-square rounded-circle position-relative wow tada" data-wow-delay=".9s">
+                                        <i class="fa fa-phone-alt fa-2x text-warning"></i>
+                                        <div class="position-absolute" style="top: 2px; right: 12px;">
+                                            <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex flex-column ms-3 flex-shrink-0">
+                                    <span>Call to Our Experts</span>
+                                    <a href="tel:+ 0123 456 7890"><span class="text-white">+254 723 700 000</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        
+
+        <!-- Back to Top -->
+        <a href="#!" class="btn btn-warning btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
